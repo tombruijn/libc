@@ -52,7 +52,7 @@ fn main() {
         Some(13) if libc_ci => set_cfg("freebsd13"),
         Some(14) if libc_ci => set_cfg("freebsd14"),
         Some(15) if libc_ci => set_cfg("freebsd15"),
-        Some(_) | None => set_cfg("freebsd11"),
+        Some(_) | None => set_cfg("freebsd12"),
     }
 
     match emcc_version_code() {
